@@ -369,8 +369,10 @@ section {
 .project-card p {
     font-size: 1.6rem;
 }
+
 .contact {
-    background-color: var(--bg-color);
+    background-color: aliceblue;
+    border-radius: 2rem;
 }
 
 
@@ -380,18 +382,17 @@ section {
 }
 
 .contact form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: list-item;
     gap: 3rem;
     margin: 5rem 0;
-    text-align: center;
 }
 
 .contact-form .input-box input,
 .contact form textarea {
-    width: 100%;
+    width: 50%;
+    display: flex;
     padding: 2.5rem;
+    height: 50vh;
     font: 1.8rem;
     color: var(--text-color);
     background-color: aliceblue;
