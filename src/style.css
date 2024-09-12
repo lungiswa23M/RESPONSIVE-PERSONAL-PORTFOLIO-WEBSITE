@@ -4,7 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 :root {
@@ -214,6 +214,7 @@ section {
     display: block;
     justify-content: center;
     align-items: center;
+    height: 10vh;
     gap: 10rem;
     background: aliceblue;
 }
@@ -224,13 +225,15 @@ section {
         border: 5px solid var(--main-color);
         border-radius: 3rem;
         height: 600px;
+        text-align: center;
         justify-content: center;
         background: var(--second-bg-color);
+        padding: 50px;
     }
 
 .about-content h2 {
     font-size: 7rem;
-    text-align: left;
+    text-align: center;
 }
 
 .about-content p {
@@ -262,18 +265,13 @@ section {
 .experience {
     background-color: var(--gb-color);
     color: black;
+    display: block;
 }
 
 .experience h2 {
-    color: var(--main-color);
+    color: var(--text-color);
 }
 
-.experience-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    align-items: center;
-    gap: 2.5rem;
-}
 
 .experience-box {
     display: flex;
@@ -285,8 +283,8 @@ section {
     border: 5px solid transparent;
     transition: 0.4s ease-in-out;
     background: var(--second-bg-color);
-        color: var(--main-color);
-        border: 5px solid var(--main-color);
+    color: var(--main-color);
+    border: 5px solid var(--main-color);
 }
 
 
@@ -294,8 +292,10 @@ section {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items:start;
+    position: relative;
+    bottom: -100px;
     padding: 4rem;
 }
 
@@ -303,16 +303,28 @@ section {
     font-size: 4rem;
     margin: 2rem 0;
     font-weight: 800;
+    color: var(--main-color);
 }
 
 .experince-info p {
     font-size: 1.4rem;
-    font-weight: 600;
+    color: var(--text-color);
     line-height: 1.7;
+}
+.experience-info ul li {
+    color: var(--text-color);
+    font-size: larger;
+    font: bolder;
+    text-decoration: none;
+    list-style: none;
 }
 
 .experience-info i {
     font-size: 8rem;
+    color: var(--main-color);
+    text-decoration: none;
+    list-style: none;
+    
 }
 
 .projects {
@@ -368,11 +380,14 @@ section {
 
 .project-card p {
     font-size: 1.6rem;
+    color: var(--text-color);
+    height: 10vh;
 }
 
 .contact {
     background-color: aliceblue;
     border-radius: 2rem;
+    text-align: center;
 }
 
 
@@ -390,7 +405,8 @@ section {
 .contact-form .input-box input,
 .contact form textarea {
     width: 50%;
-    display: flex;
+    
+    align-items: center;
     padding: 2.5rem;
     height: 50vh;
     font: 1.8rem;
@@ -402,35 +418,38 @@ section {
     resize: none;
 }
 
-.footer {
+footer {
     background-color: var(--second-bg-color);
     padding: 50px 0;
 }
 
-.footer .socail-icons {
+footer .social-icons {
     text-align: center;
     font-size: 1.8rem;
 }
 
-.footer ul li {
+footer ul li {
     display: inline-block;
     margin-left: 20px;
 }
 
-.footer ul li a {
+footer ul li a {
     color: white;
     border-bottom: 3px solid transparent;
     transition: 0.3s ease-in-out;
 }
+footer .list ul {
+    text-align: center;
+}
 
-.footer ul li a:hover {
+footer ul li a:hover {
     border-bottom: 3px solid var(--main-color);
 }
 
-.footer .copyright{
+footer .copyright{
     text-align: center;
     margin-top: 40px;
-    font-size: 16px;
+    font-size: 10px;
 }
 @media(max-width:125px) {
     #menu-icon{
