@@ -229,6 +229,7 @@ section {
         justify-content: center;
         background: var(--second-bg-color);
         padding: 50px;
+        box-shadow: 0 0 25px var(--main-color);
     }
 
 .about-content h2 {
@@ -265,17 +266,19 @@ section {
 .experience {
     background-color: var(--gb-color);
     color: black;
-    display: block;
+    
 }
 
 .experience h2 {
     color: var(--text-color);
+    position: relative;
+    top: 170px;
 }
 
 
 .experience-box {
-    display: flex;
-    justify-content: center;
+    display: block;
+    justify-content:center;
     background-color: aliceblue;
     height: 600px;
     border-radius: 3rem;
@@ -285,6 +288,8 @@ section {
     background: var(--second-bg-color);
     color: var(--main-color);
     border: 5px solid var(--main-color);
+    box-shadow: 0 0 25px var(--main-color); 
+    
 }
 
 
@@ -317,6 +322,8 @@ section {
     font: bolder;
     text-decoration: none;
     list-style: none;
+    position: relative;
+   
 }
 
 .experience-info i {
@@ -324,7 +331,8 @@ section {
     color: var(--main-color);
     text-decoration: none;
     list-style: none;
-    
+    position: relative;
+    bottom: -13px;
 }
 
 .projects {
@@ -423,10 +431,6 @@ footer {
     padding: 50px 0;
 }
 
-footer .social-icons {
-    text-align: center;
-    font-size: 1.8rem;
-}
 
 footer ul li {
     display: inline-block;
@@ -451,6 +455,14 @@ footer .copyright{
     margin-top: 40px;
     font-size: 10px;
 }
+
+footer .footer-iconTop i {
+    font-weight: 800;
+    font-size: medium;
+    color: var(--main-color);
+    margin-top: 10px;
+}
+
 @media(max-width:125px) {
     #menu-icon{
         display: block;
