@@ -361,7 +361,7 @@ section {
     border: 2px solid var(--main-color);
     border-radius: 3rem;
     gap: 2rem;
-    padding: 5rem 2rem;
+    padding: 5rem 5rem;
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 0 25px var(--main-color);
@@ -395,6 +395,7 @@ section {
 .contact {
     background-color: aliceblue;
     border-radius: 2rem;
+    border: 2px solid var(--main-color);
     text-align: center;
 }
 
@@ -402,19 +403,23 @@ section {
 .contact h2 {
     margin-bottom: 3rem;
     color: var(--text-color);
+    text-align: left;
+    text-align: center;
 }
 
 .contact form {
-    display: list-item;
+    display:grid;
     gap: 3rem;
-    margin: 5rem 0;
+    margin: 5rem 5rem;
+   align-items: center;
 }
 
 .contact-form .input-box input,
 .contact form textarea {
+    display: inline-block;
     width: 50%;
-    
     align-items: center;
+    text-align: justify;
     padding: 2.5rem;
     height: 50vh;
     font: 1.8rem;
